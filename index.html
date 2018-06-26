@@ -8,7 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="assets/javascript/game.js"></script>
+  <script src="./assets/javascript/game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,19 @@
       <p id="YouguessSofar">You Guesses So Far: </p>
     </div>
 
-
-
   </div>
 
+  <script>
+    $(document).ready(function () {
 
+      $("#wins").append(win);
+      $("#losses").append(lose);
+      $("#guessesLeft").append(guestLeft);
+      $("#YouguessSofar").append(guestPick);
+    });
+
+    // document.querySelector("#Psychic").innerHTML = html;
+  </script>
 </body>
 
 
